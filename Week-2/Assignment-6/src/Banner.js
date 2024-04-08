@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./styles/style.css";
 
 const Banner = () => {
   let [slogan, setSlogan] = useState(false);

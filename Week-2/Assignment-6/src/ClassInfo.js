@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./styles/style.css";
 
 const ClassInfo = () => {
   let [showMore, setShowMore] = useState(false);
