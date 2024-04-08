@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //Assignment 3-3 寫了兩種方法都是可以的，只是async要注意的規則比較多，但更簡潔
+      fetch("http://localhost:3000/data?number=10")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((e) => {
+          console.log(e);
+        });
+
+      // async function fetchPromise() {
+      //   try {
+      //     const response = await fetch("http://localhost:3000/data?number=10");
+      //     const data = await response.json();
+      //     console.log(data);
+      //   } catch (e) {
+      //     console.log(e);
+      //   }
+      // }
+      // fetchPromise();
+    </script>
+  </head>
+  <body>
+    <!-- Assignment 3-4 -->
+    <form action="/formHandling" method="GET">
+      <label for="number">數字:</label>
+      <input type="number" name="number" />
+      <button>送出</button>
+    </form>
+  </body>
+</html>
