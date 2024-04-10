@@ -20,17 +20,12 @@ app.get("/data", (req, res) => {
 
   if (!req.query.number) {
     res.send("Lack of Parameter");
-  } else if (isNaN(number)) {
+  } else if (isNaN(number) || number < 0) {
     res.send("Wrong Parameter");
   } else {
     const sum = (number * (number + 1)) / 2;
     res.send(`${sum}`);
   }
-});
-
-//Assignment 3-4
-app.get("/formHandling", (req, res) => {
-  res.send("你輸入的數字為" + req.query.number);
 });
 
 //Assignment 4-1 , 4-2
