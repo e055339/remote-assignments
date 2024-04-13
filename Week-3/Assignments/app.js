@@ -39,8 +39,8 @@ app.get("/myName", (req, res) => {
 });
 
 //Assignment 4-3 ~ 4-5
-app.get("/trackName", (req, res) => {
-  const name = req.query.name;
+app.post("/trackName", (req, res) => {
+  const { name } = req.body;
   res.cookie("yourCookie", name, { signed: true });
   res.redirect("/myName");
 });
