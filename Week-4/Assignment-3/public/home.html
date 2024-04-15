@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>歡迎來到主頁</h1>
+
+    <div>
+      <h2>登入</h2>
+      <form action="/login" method="POST">
+        <label for="login-email">信箱:</label>
+        <input type="email" id="login-email" name="email" required />
+        <br />
+        <label for="login-password">密碼:</label>
+        <input type="password" id="login-password" name="password" required />
+        <br />
+        <button id="login-btn">登入</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>還沒有帳號嗎?</h2>
+      <form action="/register" method="POST">
+        <label for="register">信箱:</label>
+        <input type="email" id="register-email" name="email" required />
+        <br />
+        <label for="register-password">密碼:</label>
+        <input
+          type="password"
+          id="register-password"
+          name="password"
+          required
+        />
+        <br />
+        <button id="register-btn" type="submit">註冊</button>
+      </form>
+    </div>
+  </body>
+</html>
