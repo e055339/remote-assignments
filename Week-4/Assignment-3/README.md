@@ -1,4 +1,4 @@
-#這是使用Node.js和Express連接mySQL的作業
+# 這是使用Node.js和Express連接mySQL的作業
 
 *index.js包含server以及route*
 
