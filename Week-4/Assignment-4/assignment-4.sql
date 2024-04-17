@@ -35,8 +35,9 @@ ON user.id = article.user_id;
 -- yamada@gmail.com	    yamada's article	hello world
 -- yamada@gmail.com	    yamada's article	hello world
 
-SELECT * FROM article 
-WHERE id BETWEEN 7 AND 12;
+SELECT * FROM article
+ORDER BY id
+LIMIT 6 OFFSET 6;
 --id  user_id       title              content
 -- 7	1	   example's article	 hello world
 -- 8	2	   eric's article	     hello world
